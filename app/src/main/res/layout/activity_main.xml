@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50dp"
+            android:textSize="150sp"
+            android:text="20"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTimer"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/tvStartTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:layout_below="@id/tvTimer"
+                android:layout_margin="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="เริ่ม"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+                android:id="@+id/tvStopTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:layout_below="@id/tvTimer"
+                android:layout_margin="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="หยุด"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+</RelativeLayout>
